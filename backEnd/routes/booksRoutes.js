@@ -6,3 +6,5 @@ const { createBooks, getBooks } = require("../controllers/booksController")
 
 router.route('/books/create').post(isLoggedIn, createBooks)
 router.route('/books/get').get(getBooks)
+
+module.exports = router

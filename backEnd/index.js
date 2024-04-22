@@ -20,8 +20,8 @@ app.use('/api', postRouter)
 // const authorRouter = require('./routes/authorRoutes')
 // app.use('/api',authorRouter)
 
-// const booksRouter = require('./routes/booksRoutes')
-// app.use('/api', booksRouter)
+const booksRouter = require('./routes/booksRoutes')
+app.use('/api', booksRouter)
 
 app.get('/',(req,res)=>{
     res.send("Hi there")

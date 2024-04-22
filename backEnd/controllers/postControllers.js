@@ -3,13 +3,13 @@ const prisma = require('../prisma/index')
 // Creating a new Post
 exports.createPost = async(req, res, next) => {
     try {
-        const {slug, title, body, authorId} = req.body
+        const { title, description, authorId, bookId} = req.body
         const result = await prisma.post.create({
             data: {
-                slug,
                 title,
-                body,
-                author: {connect: {id:authorId}}
+                description,
+                author: {connect: {id:authorId}},
+                books: {connect: {id:bookId}}
             }
         })
         res.json(result)
