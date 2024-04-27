@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react'
+import './ApiFetched.css'
 
 
 function DatabaseData() {
@@ -18,7 +19,7 @@ function DatabaseData() {
   return (
     // <div>DatabaseData</div>
     <div className='table-container'>
-            <h2>Database fetched Data</h2>
+            <h2>Database fetched Data of Books</h2>
             <table>
                 <thead>
                     <tr>

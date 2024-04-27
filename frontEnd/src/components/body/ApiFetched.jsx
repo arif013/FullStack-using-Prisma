@@ -19,7 +19,7 @@ function ApiFetched() {
 
     return (
         <div className='table-container'>
-            <h2>API fetched Data</h2>
+            <h2>API fetched Data of Books</h2>
             <table>
                 <thead>
                     <tr>
